@@ -5,8 +5,6 @@ const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 const config = require('../config');
 const User = require('../model/userModel');
-const autController = require('../controller/authController');
-
 
 router.use(bodyParser.urlencoded({extended:true}))
 router.use(bodyParser.json());
